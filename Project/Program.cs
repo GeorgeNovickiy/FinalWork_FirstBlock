@@ -6,7 +6,7 @@
 
     for (int i = 0; i < size; i++)
     {
-        Console.WriteLine($"Введите {i+1} элемент массива:");
+        Console.WriteLine($"Введите {i + 1} элемент массива:");
         arr[i] = Console.ReadLine();
     }
     return arr;
@@ -21,5 +21,15 @@ void PrintArray(string[] array)
         else Console.Write($"{array[i]}");
     }
     Console.WriteLine("]");
+}
+
+string[] CopyArray(string[] arr)
+{
+    string[] tempArray = new string[arr.Length];
+    for (int i = 0; i < arr.Length; i++)
+    {
+        if (arr[i].Length <= 3) tempArray[i] = arr[i];
+    }
+    return tempArray;
 }
 
