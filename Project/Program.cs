@@ -33,3 +33,11 @@ string[] CopyArray(string[] arr)
     return tempArray;
 }
 
+
+string[] arr1 = CreateArrayString();
+Console.WriteLine("Исходный массив:");
+PrintArray(arr1);
+
+string[] arr2 = CopyArray(arr1);
+Console.WriteLine("Массив с элементами длина которых меньше, либо равна 3 символам:");
+PrintArray(arr2);
